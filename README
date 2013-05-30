@@ -1,0 +1,12 @@
+My attempt at a dotfiles system.  Based loosely on
+https://github.com/sontek/dotfiles and various projects listed on
+http://dotfiles.github.io/
+
+Enjoy!
+
+Usage:
+	Place dotfiles in home directory
+		make install
+	
+	Restore original dotfiles in home directory
+		make restore
