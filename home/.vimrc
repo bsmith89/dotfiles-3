@@ -1,4 +1,3 @@
-runtime bundle/pathogen/autoload/pathogen.vim
 " https://github.com/sontek/dotfiles/
 " ==========================================================
 " Dependencies - Libraries/Applications outside of vim
@@ -86,6 +85,7 @@ imap <C-W> <C-O><C-W>
 " ==========================================================
 " Load pathogen with docs for all plugins
 filetype off
+runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#incubate()
 call pathogen#helptags()
@@ -99,6 +99,7 @@ filetype plugin indent on     " enable loading indent file for filetype
 set number                    " Display line numbers
 set numberwidth=1             " using only 1 column (and 1 space) while possible
 set background=dark           " We are using dark background in vim
+colorscheme solarized
 set title                     " show title in console title bar
 set wildmenu                  " Menu completion in command mode on <Tab>
 set wildmode=full             " <Tab> cycles between all matching choices.
