@@ -128,6 +128,6 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 
 # Activate the default virtualenv.
-if [[ -e /Users/bjsmith/.virtualenvs/default/bin/activate ]]; then
+if [[ -e $HOME/.virtualenvs/default/bin/activate ]]; then
 	source $HOME/.virtualenvs/default/bin/activate
 fi

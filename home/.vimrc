@@ -117,10 +117,6 @@ set wildignore+=*.egg-info/**
 " Set working directory
 nnoremap <leader>. :lcd %:p:h<CR>
 
-" Disable the colorcolumn when switching modes.  Make sure this is the
-" first autocmd for the filetype here
-autocmd FileType * setlocal colorcolumn=0
-
 """ Insert completion
 " don't select first item, follow typing in autocomplete
 set completeopt=menuone,longest,preview
