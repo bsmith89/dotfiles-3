@@ -256,6 +256,7 @@ nnoremap <leader>x :lclose<CR>
 
 " Supposed to (w/ the corresponding changes to my .tmux.conf)
 " allow me to use vim keys for pane movements between both apps
+" http://www.codeography.com/2013/06/19/navigating-vim-and-tmux-splits.html
 if exists('$TMUX')
   function! TmuxOrSplitSwitch(wincmd, tmuxdir)
     let previous_winnr = winnr()
