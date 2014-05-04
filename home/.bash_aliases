@@ -44,3 +44,11 @@ alias cl="column -s '	' -t"
 function tab {
     cl $1 | less -S
 }
+
+# SSH to local virtualbox
+# Must have setup and started a virtualbox guest
+# with the same username as the host
+# And port forwarding a la: http://stackoverflow.com/a/10532299/848121
+vbox="${USER}@127.0.0.1"
+alias vbox-ssh="ssh -p 3022 ${vbox}"
+alias vbox-sshx="ssh -X -p 3022 ${vbox}"
